@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		body {
+			background: rgb(64, 64, 64);
+			overflow: hidden;
+		}
+		#canvas {
+			background: white;
+		}
+
+		#canvas_2 {
+			background: white;
+		}
+	</style>
+	<title>Siyomek</title>
+	<meta name="viewport" content="height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+
+	<canvas id="canvas" height="200px" width="200px"></canvas>
+
+	<canvas id="canvas_2" height="200px" width="200px"></canvas>
+
+	<script src="multi-touch-draw.js"></script>
+	<script>new MultiTouchDraw(document.getElementById("canvas"));</script>
+	<script>new MultiTouchDraw(document.getElementById("canvas_2"));</script>
+
+</body>
+</html>
